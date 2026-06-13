@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360" width="500" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .cn { font-family: 'STKaiti', 'KaiTi', 'Noto Serif SC', 'SimSun', 'Times New Roman', serif; font-weight: 900; fill: #000; letter-spacing: 8px; }
+      .en { font-family: 'Arial Black', 'Helvetica', sans-serif; font-weight: 900; fill: #000; font-style: italic; letter-spacing: 6px; }
+      .sub { font-family: 'Times New Roman', 'Garamond', serif; font-style: italic; fill: #000; letter-spacing: 3px; }
+      .frame { fill: none; stroke: #000; stroke-width: 1; }
+    </style>
+  </defs>
+  <!-- Chinese karakters 北京酒樓 -->
+  <text x="250" y="125" text-anchor="middle" class="cn" font-size="100">北京酒樓</text>
+  <!-- Decorative separator -->
+  <line x1="120" y1="155" x2="380" y2="155" stroke="#000" stroke-width="1"/>
+  <!-- PEKING in bold italic -->
+  <text x="250" y="240" text-anchor="middle" class="en" font-size="100">PEKING</text>
+  <!-- sinds 1983 -->
+  <text x="250" y="295" text-anchor="middle" class="sub" font-size="30">sinds 1983</text>
+  <!-- Decorative bottom line -->
+  <line x1="180" y1="320" x2="320" y2="320" stroke="#000" stroke-width="1"/>
+</svg>

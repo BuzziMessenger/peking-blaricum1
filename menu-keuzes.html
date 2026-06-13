@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Keuzes - Peking Blaricum</title>
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f5f5; color: #333; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #c8102e; margin-bottom: 30px; }
+        .intro { text-align: center; max-width: 800px; margin: 0 auto 40px; color: #666; }
+        .variant { background: #fff; border-radius: 12px; padding: 30px; margin-bottom: 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .variant h2 { color: #c8102e; border-bottom: 2px solid #d4af37; padding-bottom: 10px; margin-top: 0; }
+        .variant-desc { color: #666; margin-bottom: 20px; }
+        
+        /* Variant 1: Tabel */
+        .menu-tabel { width: 100%; border-collapse: collapse; }
+        .menu-tabel th { background: #c8102e; color: #fff; padding: 12px; text-align: left; }
+        .menu-tabel td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+        .menu-tabel tr:hover { background: #faf6ee; }
+        .menu-tabel .prijs { text-align: right; font-weight: bold; color: #c8102e; }
+        
+        /* Variant 2: Kaarten */
+        .menu-kaarten { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .menu-kaart { background: #fff; border-radius: 8px; padding: 20px; border-left: 4px solid #c8102e; }
+        .menu-kaart .naam { font-weight: bold; font-size: 18px; margin-bottom: 5px; }
+        .menu-kaart .desc { color: #666; font-size: 14px; margin-bottom: 10px; }
+        .menu-kaart .prijs { font-size: 20px; font-weight: bold; color: #c8102e; }
+        
+        /* Variant 3: Lijst */
+        .menu-lijst { list-style: none; padding: 0; }
+        .menu-lijst li { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #eee; }
+        .menu-lijst .info { flex: 1; }
+        .menu-lijst .naam { font-weight: bold; }
+        .menu-lijst .desc { color: #666; font-size: 14px; }
+        .menu-lijst .prijs { font-weight: bold; color: #c8102e; white-space: nowrap; margin-left: 20px; }
+        
+        /* Variant 4: Compact */
+        .menu-compact { columns: 2; column-gap: 30px; }
+        .menu-compact-item { break-inside: avoid; margin-bottom: 15px; display: flex; justify-content: space-between; border-bottom: 1px dotted #ddd; padding-bottom: 5px; }
+        
+        /* Afhaalmenu */
+        .afhaalmenu { background: linear-gradient(135deg, #fff 0%, #faf6ee 100%); border: 2px solid #d4af37; border-radius: 12px; padding: 30px; margin-bottom: 30px; }
+        .afhaalmenu h3 { color: #c8102e; font-size: 24px; margin-top: 0; }
+        .afhaalmenu .prijs { font-size: 28px; font-weight: bold; color: #c8102e; }
+        .afhaalmenu ul { list-style: none; padding: 0; }
+        .afhaalmenu ul li { padding: 8px 0; border-bottom: 1px dotted #ddd; }
+        .afhaalmenu ul li:before { content: "✓ "; color: #c8102e; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            .menu-compact { columns: 1; }
+            .menu-kaarten { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu Keuzes - Peking Blaricum</h1>
+    <p class="intro">Hieronder staan verschillende manieren om de menukaart weer te geven. Kies welke stijl het beste past bij uw website.</p>
+    
+    <!-- AFHAALMENU'S -->
+    <div class="variant">
+        <h2>Afhaalmenu's (Altijd zichtbaar)</h2>
+        <p class="variant-desc">De twee afhaalmenu's worden altijd bovenaan getoond als kaarten.</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="afhaalmenu">
+                <h3>Afhaalmenu-A</h3>
+                <p class="prijs">EUR 23,50 <small>voor 2 personen</small></p>
+                <p>Voor 2 personen, met 2 witte rijst</p>
+                <ul>
+                    <li>4 stuks kleine loempia's</li>
+                    <li>Saté 2 stokjes</li>
+                    <li>Kroepoek</li>
+                    <li><strong>Tja Sieuw</strong> (spec. op chinese wijze geroosterd varkensvlees met pikante saus)</li>
+                    <li><strong>Kipfilet in Ketjapsaus</strong> (kipfilet met zoete pikante saus)</li>
+                </ul>
+                <p><em>andere gerechten niet mogelijk</em></p>
+            </div>
+            
+            <div class="afhaalmenu">
+                <h3>Afhaalmenu-B</h3>
+                <p class="prijs">EUR 23,50 <small>voor 2 personen</small></p>
+                <p>Voor 2 personen, met 2 witte rijst</p>
+                <ul>
+                    <li>4 stuks kleine loempia's</li>
+                    <li>Saté 2 stokjes</li>
+                    <li>Kroepoek</li>
+                    <li><strong>Babi Pangang</strong> (geroosterd varkensvlees in pikante saus)</li>
+                    <li><strong>Foe Yong Hai met kipfilet</strong> (omelet met kipfilet)</li>
+                </ul>
+                <p><em>andere gerechten niet mogelijk</em></p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 15px; color: #666;">i.p.v. witte rijst: Nasi of Bami EUR 2,00 | Mihoen of Chinese Bami EUR 4,00 | saus apart EUR 0,50</p>
+    </div>
+    
+    <!-- VARIANT 1: TABEL -->
+    <div class="variant">
+        <h2>Variant 1: Tabel</h2>
+        <p class="variant-desc">Klassieke tabelweergave zoals op de originele menukaart. Overzichtelijk met nummering.</p>
+        
+        <h3 style="color: #c8102e; background: #c8102e; color: #fff; padding: 10px; margin: 0;">VOOR- EN BIJGERECHTEN</h3>
+        <table class="menu-tabel">
+            <tr><td>1</td><td>Kroepoek</td><td class="prijs">EUR 3,50</td></tr>
+            <tr><td>2</td><td>Casava kroepoek (gekruid)</td><td class="prijs">EUR 4,20</td></tr>
+            <tr><td>3</td><td>Grote loempia (ham)</td><td class="prijs">EUR 5,20</td></tr>
+            <tr><td>4</td><td>Chun Kun (chinese loempia's 2 stuks)</td><td class="prijs">EUR 4,20</td></tr>
+            <tr><td>5</td><td>Kleine Loempia's (8 stuks)</td><td class="prijs">EUR 6,90</td></tr>
+            <tr><td>7</td><td>Saté Ajam (kip, 4 stokjes)</td><td class="prijs">EUR 7,80</td></tr>
+            <tr><td>8</td><td>Saté Oedang (chin. garnalen, 4 stokjes)</td><td class="prijs">EUR 12,00</td></tr>
+            <tr><td>9</td><td>Chinese Hors d'Oeuvre</td><td class="prijs">EUR 8,00</td></tr>
+            <tr><td>10</td><td>Kai Kauw (gefrituurde kippasteitjes 4 stuks)</td><td class="prijs">EUR 6,20</td></tr>
+            <tr><td>11</td><td>Atjar</td><td class="prijs">EUR 4,00</td></tr>
+            <tr><td>12</td><td>Tja Tai Ha (4 stuks gefrituurde garnalen)</td><td class="prijs">EUR 12,00</td></tr>
+            <tr><td>13</td><td>Pisang Goreng (gefrituurde banaan 4 stuks)</td><td class="prijs">EUR 4,20</td></tr>
+            <tr><td>14</td><td>Pinda saus</td><td class="prijs">EUR 3,30</td></tr>
+            <tr><td>15</td><td>Witte rijst</td><td class="prijs">EUR 3,70</td></tr>
+            <tr><td>16</td><td>Patat</td><td class="prijs">EUR 3,70</td></tr>
+            <tr><td>17</td><td>Kroket</td><td class="prijs">EUR 3,20</td></tr>
+            <tr><td>18</td><td>Frikandel</td><td class="prijs">EUR 3,20</td></tr>
+        </table>
+        
+        <h3 style="color: #c8102e; background: #c8102e; color: #fff; padding: 10px; margin: 20px 0 0;">SOEPEN</h3>
+        <table class="menu-tabel">
+            <tr><td>19</td><td>Kippensoep</td><td class="prijs">EUR 4,50</td></tr>
+            <tr><td>20</td><td>Tomatensoep</td><td class="prijs">EUR 4,50</td></tr>
+            <tr><td>21</td><td>Haaievinnensoep</td><td class="prijs">EUR 4,50</td></tr>
+            <tr><td>23</td><td>Wan Tan soep</td><td class="prijs">EUR 6,50</td></tr>
+            <tr><td>24</td><td>Peking soep</td><td class="prijs">EUR 6,00</td></tr>
+        </table>
+    </div>
+    
+    <!-- VARIANT 2: KAARTEN -->
+    <div class="variant">
+        <h2>Variant 2: Kaarten</h2>
+        <p class="variant-desc">Moderne kaartweergave met balkjes. Goed leesbaar op mobiel.</p>
+        
+        <h3 style="color: #c8102e;">NASI GERECHTEN</h3>
+        <div class="menu-kaarten">
+            <div class="menu-kaart">
+                <div class="naam">25. Nasi Goreng</div>
+                <div class="desc">Nasi goreng met ei, vlees en ham</div>
+                <div class="prijs">EUR 7,50</div>
+            </div>
+            <div class="menu-kaart">
+                <div class="naam">26. Kleine Nasi Goreng</div>
+                <div class="desc">Kleine portie nasi goreng</div>
+                <div class="prijs">EUR 4,20</div>
+            </div>
+            <div class="menu-kaart">
+                <div class="naam">27. Nasi Goreng speciaal</div>
+                <div class="desc">1 stokje saté ajam, 1/4 kip</div>
+                <div class="prijs">EUR 11,00</div>
+            </div>
+            <div class="menu-kaart">
+                <div class="naam">28. Nasi Goreng Peking</div>
+                <div class="desc">Babi Pangang, Koe Loe Yuk, 1 stokje saté ajam, 1/4 kip</div>
+                <div class="prijs">EUR 17,50</div>
+            </div>
+            <div class="menu-kaart">
+                <div class="naam">29. Nasi Goreng Young Chow</div>
+                <div class="desc">Nasi met kleine garnalen, tja siew en groenten</div>
+                <div class="prijs">EUR 16,50</div>
+            </div>
+            <div class="menu-kaart">
+                <div class="naam">30. Nasi Goreng Tjap Wui</div>
+                <div class="desc">Kip, garnalen en groenten</div>
+                <div class="prijs">EUR 16,00</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- VARIANT 3: LIJST -->
+    <div class="variant">
+        <h2>Variant 3: Lijst</h2>
+        <p class="variant-desc">Eenvoudige lijst met name en prijs naast elkaar.</p>
+        
+        <h3 style="color: #c8102e;">BAMI GERECHTEN</h3>
+        <ul class="menu-lijst">
+            <li><div class="info"><span class="naam">31. Bami Goreng</span><div class="desc">Bami goreng met ei, vlees, ham</div></div><span class="prijs">EUR 7,50</span></li>
+            <li><div class="info"><span class="naam">32. Kleine Bami Goreng</span><div class="desc">Kleine portie bami goreng</div></div><span class="prijs">EUR 4,20</span></li>
+            <li><div class="info"><span class="naam">33. Bami Goreng speciaal</span><div class="desc">1 stokje saté ajam, 1/4 kip</div></div><span class="prijs">EUR 11,00</span></li>
+            <li><div class="info"><span class="naam">34. Bami Goreng Peking</span><div class="desc">Babi pangang, koe loe yuk, 1 stokje saté ajam en 1/4 kip</div></div><span class="prijs">EUR 17,50</span></li>
+            <li><div class="info"><span class="naam">35. Bami Goreng Tjap Wui</span><div class="desc">Kip, garnalen en groenten</div></div><span class="prijs">EUR 16,00</span></li>
+        </ul>
+    </div>
+    
+    <!-- VARIANT 4: COMPACT -->
+    <div class="variant">
+        <h2>Variant 4: Compact (2 kolommen)</h2>
+        <p class="variant-desc">Compacte weergave in twee kolommen. Bespaart ruimte.</p>
+        
+        <h3 style="color: #c8102e;">VLEES GERECHTEN (met witte rijst)</h3>
+        <div class="menu-compact">
+            <div class="menu-compact-item"><span>55. Babi Pangang</span><span>EUR 15,50</span></div>
+            <div class="menu-compact-item"><span>56. Szechuan Babi Pangang</span><span>EUR 17,50</span></div>
+            <div class="menu-compact-item"><span>57. Babi Ketjap</span><span>EUR 15,50</span></div>
+            <div class="menu-compact-item"><span>58. Koe Loe Yuk</span><span>EUR 14,50</span></div>
+        </div>
+        
+        <h3 style="color: #c8102e;">KIP GERECHTEN (met witte rijst)</h3>
+        <div class="menu-compact">
+            <div class="menu-compact-item"><span>61. Gefileerde kip met cashewnoten</span><span>EUR 14,50</span></div>
+            <div class="menu-compact-item"><span>62. Gefileerde kip met champignons</span><span>EUR 14,50</span></div>
+            <div class="menu-compact-item"><span>63. Gefileerde kip met kerrysaus</span><span>EUR 14,50</span></div>
+            <div class="menu-compact-item"><span>64. Gefileerde kip met babi pangang saus</span><span>EUR 14,50</span></div>
+            <div class="menu-compact-item"><span>65. Gefileerde kip met ketjap saus</span><span>EUR 14,50</span></div>
+            <div class="menu-compact-item"><span>66. Gefileerde kip met ananas</span><span>EUR 14,50</span></div>
+            <div class="menu-compact-item"><span>67. Koe Loe Kai</span><span>EUR 14,50</span></div>
+        </div>
+    </div>
+    
+    <!-- COMPLETE OVERZICHT -->
+    <div class="variant">
+        <h2>Complete Menukaart (Alle categorieen)</h2>
+        <p class="variant-desc">Hier volgt een overzicht van alle categorieeen met alle items. Kies uw favoriete weergavestijl hierboven.</p>
+        
+        <p><strong>Categorieeen:</strong></p>
+        <ul>
+            <li>Voor- en Bijgerechten (18 items)</li>
+            <li>Soepen (5 items)</li>
+            <li>Nasi Gerechten (6 items)</li>
+            <li>Bami Gerechten (5 items)</li>
+            <li>Groente Gerechten (5 items)</li>
+            <li>Eier Gerechten (6 items)</li>
+            <li>Mihoen Gerechten (7 items)</li>
+            <li>Vlees Gerechten (4 items)</li>
+            <li>Kip Gerechten (7 items)</li>
+            <li>Ossenhaasfilet (4 items)</li>
+            <li>Garnalen Gerechten (5 items)</li>
+            <li>Indische Gerechten (11 items)</li>
+            <li>Cantonese Garnalen (3 items)</li>
+            <li>Peking Eend (4 items)</li>
+            <li>Cantonese Vlees (6 items)</li>
+            <li>Chinese Bami (6 items)</li>
+            <li>Szechuan Gerechten (8 items)</li>
+            <li>Combinatie (1 item)</li>
+            <li>Rijsttafels (4 items)</li>
+        </ul>
+        
+        <p style="margin-top: 20px;"><strong>Totaal:</strong> 113 menu-items + 2 afhaalmenu's</p>
+        <p><strong>Prijslijst datum:</strong> november 2025</p>
+        <p><strong>Allergie:</strong> Heeft u een allergie? Meld het ons!</p>
+    </div>
+    
+    <div style="text-align: center; padding: 30px; color: #666;">
+        <p><a href="index.html" style="color: #c8102e;">Terug naar de website</a></p>
+    </div>
+</body>
+</html>

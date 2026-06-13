@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volledige menukaart van Chinees Indisch Restaurant Peking in Blaricum - meer dan 120 gerechten met eerlijke prijzen.">
+    <meta name="keywords" content="Peking Blaricum menukaart, chinees menu, prijzen, afhaalmenu, babi pangang, nasi, bami, rijsttafel">
+    <title>Menukaart — Peking Blaricum · Chinees Indisch Afhaalrestaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo logo-image">
+                <img src="logo.svg" alt="Peking - sinds 1983" class="logo-img">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link active">Menukaart</a></li>
+                    <li><a href="index.html#over-ons" class="nav-link">Over ons</a></li>
+                    <li><a href="index.html#openingstijden" class="nav-link">Openingstijden</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li><a href="tel:0355261358" class="btn btn-primary nav-cta">035 526 1358</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-pattern"></div>
+        <div class="container menu-hero-inner">
+            <p class="hero-eyebrow">Onze gerechten</p>
+            <h1 class="menu-hero-title">Menukaart</h1>
+            <p class="menu-hero-sub">Chinees Indisch Afhaalrestaurant · Meeneem-prijslijst november 2025</p>
+        </div>
+    </section>
+
+    <!-- Afhaalmenu's -->
+    <section class="section" id="afhaalmenus">
+        <div class="container">
+            <div class="section-head section-head-center">
+                <span class="section-eyebrow">Speciaal voor 2 personen</span>
+                <h2 class="section-title">Afhaalmenu's</h2>
+                <p class="section-lead">Twee complete afhaalmenu's, inclusief 2 porties witte rijst. Andere gerechten niet mogelijk.</p>
+            </div>
+
+            <div class="afhaalmenu-grid">
+                <div class="afhaalmenu-card">
+                    <div class="afhaalmenu-head">
+                        <div class="afhaalmenu-num">A</div>
+                        <div>
+                            <div class="afhaalmenu-name">Afhaalmenu-A</div>
+                            <div class="afhaalmenu-price">&euro; 23,50 <small style="font-weight:400; font-size:13px; color:#777;">voor 2 personen</small></div>
+                        </div>
+                    </div>
+                    <ul class="afhaalmenu-items">
+                        <li>4 stuks kleine loempia's</li>
+                        <li>Sat&eacute; 2 stokjes</li>
+                        <li>Kroepoek</li>
+                        <li><strong>Tja Sieuw</strong> (spec. op chinese wijze geroosterd varkensvlees met pikante saus)</li>
+                        <li><strong>Kipfilet in Ketjapsaus</strong> (kipfilet met zoete pikante saus)</li>
+                    </ul>
+                    <div class="afhaalmenu-note">Andere gerechten niet mogelijk</div>
+                </div>
+
+                <div class="afhaalmenu-card">
+                    <div class="afhaalmenu-head">
+                        <div class="afhaalmenu-num">B</div>
+                        <div>
+                            <div class="afhaalmenu-name">Afhaalmenu-B</div>
+                            <div class="afhaalmenu-price">&euro; 23,50 <small style="font-weight:400; font-size:13px; color:#777;">voor 2 personen</small></div>
+                        </div>
+                    </div>
+                    <ul class="afhaalmenu-items">
+                        <li>4 stuks kleine loempia's</li>
+                        <li>Sat&eacute; 2 stokjes</li>
+                        <li>Kroepoek</li>
+                        <li><strong>Babi Pangang</strong> (geroosterd varkensvlees in pikante saus)</li>
+                        <li><strong>Foe Yong Hai met kipfilet</strong> (omelet met kipfilet)</li>
+                    </ul>
+                    <div class="afhaalmenu-note">Andere gerechten niet mogelijk</div>
+                </div>
+            </div>
+
+            <div class="afhaalmenu-toeslag">
+                <p>In plaats van witte rijst: Nasi of Bami &euro; 2,00 | Mihoen of Chinese Bami &euro; 4,00 | Saus apart &euro; 0,50</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories + Items -->
+    <section class="section section-alt" id="menukaart">
+        <div class="container">
+            <div class="section-head section-head-center">
+                <span class="section-eyebrow">Alle gerechten</span>
+                <h2 class="section-title">Volledige Menukaart</h2>
+                <p class="section-lead">Klik op een categorie om te filteren. Alle prijzen zijn meeneemprijzen.</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="menu-categories" id="menuCategories">
+                <button class="menu-cat active" data-cat="all">Alle gerechten</button>
+                <button class="menu-cat" data-cat="voor">Voor- en Bijgerechten</button>
+                <button class="menu-cat" data-cat="soepen">Soepen</button>
+                <button class="menu-cat" data-cat="nasi">Nasi Gerechten</button>
+                <button class="menu-cat" data-cat="bami">Bami Gerechten</button>
+                <button class="menu-cat" data-cat="groente">Groente Gerechten</button>
+                <button class="menu-cat" data-cat="ei">Eier Gerechten</button>
+                <button class="menu-cat" data-cat="mihoen">Mihoen Gerechten</button>
+                <button class="menu-cat" data-cat="vlees">Vlees Gerechten</button>
+                <button class="menu-cat" data-cat="kip">Kip Gerechten</button>
+                <button class="menu-cat" data-cat="ossenhaas">Ossenhaasfilet</button>
+                <button class="menu-cat" data-cat="garnalen">Garnalen Gerechten</button>
+                <button class="menu-cat" data-cat="indisch">Indische Gerechten</button>
+                <button class="menu-cat" data-cat="cant-garnalen">Cantonese Garnalen</button>
+                <button class="menu-cat" data-cat="eend">Peking Eend</button>
+                <button class="menu-cat" data-cat="cant-vlees">Cantonese Vlees</button>
+                <button class="menu-cat" data-cat="ch-bami">Chinese Bami</button>
+                <button class="menu-cat" data-cat="szechuan">Szechuan Gerechten</button>
+                <button class="menu-cat" data-cat="combi">Combinatie</button>
+                <button class="menu-cat" data-cat="rijsttafel">Rijsttafels</button>
+            </div>
+
+            <!-- ========== VOOR- EN BIJGERECHTEN ========== -->
+            <div class="menu-grid" data-category="voor">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">1.</span> Kroepoek</span><span class="menu-item-price">&euro; 3,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">2.</span> Casava kroepoek (gekruid)</span><span class="menu-item-price">&euro; 4,20</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">3.</span> Grote loempia (ham)</span><span class="menu-item-price">&euro; 5,20</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">4.</span> Chun Kun (chinese loempia's 2 stuks)</span><span class="menu-item-price">&euro; 4,20</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">5.</span> Kleine Loempia's (8 stuks)</span><span class="menu-item-price">&euro; 6,90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">7.</span> Sat&eacute; Ajam (kip, 4 stokjes)</span><span class="menu-item-price">&euro; 7,80</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">8.</span> Sat&eacute; Oedang (chin. garnalen, 4 stokjes)</span><span class="menu-item-price">&euro; 12,00</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">9.</span> Chinese Hors d'Oeuvre</span><span class="menu-item-price">&euro; 8,00</span></div><div class="menu-item-desc">Combinatie van kai kauw, chinese loempia, kleine loempia en krabbeklauw</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">10.</span> Kai Kauw (gefrituurde kippasteitjes 4 stuks)</span><span class="menu-item-price">&euro; 6,20</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">11.</span> Atjar</span><span class="menu-item-price">&euro; 4,00</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">12.</span> Tja Tai Ha (4 stuks gefrituurde garnalen)</span><span class="menu-item-price">&euro; 12,00</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">13.</span> Pisang Goreng (gefrituurde banaan 4 stuks)</span><span class="menu-item-price">&euro; 4,20</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">14.</span> Pinda saus</span><span class="menu-item-price">&euro; 3,30</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">15.</span> Witte rijst</span><span class="menu-item-price">&euro; 3,70</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">16.</span> Patat</span><span class="menu-item-price">&euro; 3,70</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">17.</span> Kroket</span><span class="menu-item-price">&euro; 3,20</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">18.</span> Frikandel</span><span class="menu-item-price">&euro; 3,20</span></div></div>
+            </div>
+
+            <!-- ========== SOEPEN ========== -->
+            <div class="menu-grid" data-category="soepen">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">19.</span> Kippensoep</span><span class="menu-item-price">&euro; 4,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">20.</span> Tomatensoep</span><span class="menu-item-price">&euro; 4,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">21.</span> Haaievinnensoep</span><span class="menu-item-price">&euro; 4,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">23.</span> Wan Tan soep</span><span class="menu-item-price">&euro; 6,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">24.</span> Peking soep</span><span class="menu-item-price">&euro; 6,00</span></div></div>
+            </div>
+
+            <!-- ========== NASI GERECHTEN ========== -->
+            <div class="menu-grid" data-category="nasi">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">25.</span> Nasi Goreng</span><span class="menu-item-price">&euro; 7,50</span></div><div class="menu-item-desc">Nasi goreng met ei, vlees en ham</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">26.</span> Kleine Nasi Goreng</span><span class="menu-item-price">&euro; 4,20</span></div><div class="menu-item-desc">Kleine portie nasi goreng</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">27.</span> Nasi Goreng speciaal</span><span class="menu-item-price">&euro; 11,00</span></div><div class="menu-item-desc">1 stokje sat&eacute; ajam, 1/4 kip</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">28.</span> Nasi Goreng Peking</span><span class="menu-item-price">&euro; 17,50</span></div><div class="menu-item-desc">Babi Pangang, Koe Loe Yuk, 1 stokje sat&eacute; ajam, 1/4 kip</div><span class="menu-item-tag">Aanrader</span></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">29.</span> Nasi Goreng Young Chow</span><span class="menu-item-price">&euro; 16,50</span></div><div class="menu-item-desc">Nasi met kleine garnalen, tja siew en groenten</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">30.</span> Nasi Goreng Tjap Wui</span><span class="menu-item-price">&euro; 16,00</span></div><div class="menu-item-desc">Kip, garnalen en groenten</div></div>
+            </div>
+
+            <!-- ========== BAMI GERECHTEN ========== -->
+            <div class="menu-grid" data-category="bami">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">31.</span> Bami Goreng</span><span class="menu-item-price">&euro; 7,50</span></div><div class="menu-item-desc">Bami goreng met ei, vlees, ham</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">32.</span> Kleine Bami Goreng</span><span class="menu-item-price">&euro; 4,20</span></div><div class="menu-item-desc">Kleine portie bami goreng</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">33.</span> Bami Goreng speciaal</span><span class="menu-item-price">&euro; 11,00</span></div><div class="menu-item-desc">1 stokje sat&eacute; ajam, 1/4 kip</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">34.</span> Bami Goreng Peking</span><span class="menu-item-price">&euro; 17,50</span></div><div class="menu-item-desc">Babi pangang, koe loe yuk, 1 stokje sat&eacute; ajam en 1/4 kip</div><span class="menu-item-tag">Aanrader</span></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">35.</span> Bami Goreng Tjap Wui</span><span class="menu-item-price">&euro; 16,00</span></div><div class="menu-item-desc">Kip, garnalen en groenten</div></div>
+            </div>
+
+            <!-- ========== GROENTE GERECHTEN ========== -->
+            <div class="menu-grid" data-category="groente">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">37.</span> Tjap Tjoy met kipfilet</span><span class="menu-item-price">&euro; 13,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">38.</span> Tjap Tjoy met ossenhaasfilet</span><span class="menu-item-price">&euro; 16,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">39.</span> Tjap Tjoy met chin. grote garnalen</span><span class="menu-item-price">&euro; 20,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">40.</span> Tjap Tjoy Peking</span><span class="menu-item-price">&euro; 16,50</span></div><div class="menu-item-desc">Kip en garnalen</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">41.</span> Tjap Tjoy zonder vlees</span><span class="menu-item-price">&euro; 11,50</span></div><div class="menu-item-tag">Vegetarisch</div></div>
+            </div>
+
+            <!-- ========== EIER GERECHTEN ========== -->
+            <div class="menu-grid" data-category="ei">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">42.</span> Foe Yong Hai met Tja sieuw</span><span class="menu-item-price">&euro; 13,50</span></div><div class="menu-item-desc">Varkensvlees</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">43.</span> Foe Yong Hai met ossenhaasfilet</span><span class="menu-item-price">&euro; 16,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">44.</span> Foe Yong Hai met kip</span><span class="menu-item-price">&euro; 13,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">45.</span> Foe Yong Hai met chin. grote garnalen</span><span class="menu-item-price">&euro; 20,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">46.</span> Foe Yong Hai Peking</span><span class="menu-item-price">&euro; 16,50</span></div><div class="menu-item-desc">Kip en garnalen</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">47.</span> Foe Yong Hai zonder vlees</span><span class="menu-item-price">&euro; 11,50</span></div><div class="menu-item-tag">Vegetarisch</div></div>
+            </div>
+
+            <!-- ========== MIHOEN GERECHTEN ========== -->
+            <div class="menu-grid" data-category="mihoen">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">48.</span> Mihoen zonder vlees</span><span class="menu-item-price">&euro; 12,00</span></div><div class="menu-item-tag">Vegetarisch</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">49.</span> Mihoen Goreng met kipfilet</span><span class="menu-item-price">&euro; 13,80</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">50.</span> Mihoen Goreng met chin. grote garnalen</span><span class="menu-item-price">&euro; 19,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">51.</span> Mihoen Goreng speciaal</span><span class="menu-item-price">&euro; 17,50</span></div><div class="menu-item-desc">Kip en garnalen</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">52.</span> Mihoen Goreng Peking</span><span class="menu-item-price">&euro; 19,00</span></div><div class="menu-item-desc">Babi pangang, koe loe yuk, 1 stokje sat&eacute; ajam en 1/4 kip</div><span class="menu-item-tag">Aanrader</span></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">53.</span> Mihoen Goreng Singapore</span><span class="menu-item-price">&euro; 16,80</span></div><div class="menu-item-desc">Kleine garnalen, tja siew, kerry en groenten</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">54.</span> Mihoen Goreng klein</span><span class="menu-item-price">&euro; 8,00</span></div><div class="menu-item-desc">Ham, vlees</div></div>
+            </div>
+
+            <!-- ========== VLEES GERECHTEN ========== -->
+            <div class="menu-grid" data-category="vlees">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">55.</span> Babi Pangang</span><span class="menu-item-price">&euro; 15,50</span></div><div class="menu-item-desc">Geroosterd mager varkensvlees met pikante gember saus</div><span class="menu-item-tag">Klassiek</span></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">56.</span> Szechuan Babi Pangang</span><span class="menu-item-price">&euro; 17,50</span></div><div class="menu-item-desc">Koenposaus met rode pepers en knoflook</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">57.</span> Babi Ketjap</span><span class="menu-item-price">&euro; 15,50</span></div><div class="menu-item-desc">Zoete pikante saus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">58.</span> Koe Loe Yuk</span><span class="menu-item-price">&euro; 14,50</span></div><div class="menu-item-desc">Gepaneerde varkensvlees in zoetzure saus</div></div>
+            </div>
+
+            <!-- ========== KIP GERECHTEN ========== -->
+            <div class="menu-grid" data-category="kip">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">61.</span> Gefileerde kip met cashewnoten</span><span class="menu-item-price">&euro; 14,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">62.</span> Gefileerde kip met champignons</span><span class="menu-item-price">&euro; 14,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">63.</span> Gefileerde kip met kerrysaus</span><span class="menu-item-price">&euro; 14,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">64.</span> Gefileerde kip met babi pangang saus</span><span class="menu-item-price">&euro; 14,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">65.</span> Gefileerde kip met ketjap saus</span><span class="menu-item-price">&euro; 14,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">66.</span> Gefileerde kip met ananas</span><span class="menu-item-price">&euro; 14,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">67.</span> Koe Loe Kai</span><span class="menu-item-price">&euro; 14,50</span></div><div class="menu-item-desc">Gepaneerde kipblokjes in zoetzure saus</div></div>
+            </div>
+
+            <!-- ========== OSSENHAASFILET ========== -->
+            <div class="menu-grid" data-category="ossenhaas">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">68.</span> Ossenhaasfilet met champignons</span><span class="menu-item-price">&euro; 17,90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">69.</span> Ossenhaasfilet met kerrysaus</span><span class="menu-item-price">&euro; 17,90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">70.</span> Ossenhaasfilet met babi pangang saus</span><span class="menu-item-price">&euro; 17,90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">71.</span> Ossenhaasfilet met ketjap saus</span><span class="menu-item-price">&euro; 17,90</span></div></div>
+            </div>
+
+            <!-- ========== GARNALEN GERECHTEN ========== -->
+            <div class="menu-grid" data-category="garnalen">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">72.</span> Garnalen met champignons</span><span class="menu-item-price">&euro; 22,90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">73.</span> Garnalen met kerrysaus</span><span class="menu-item-price">&euro; 22,90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">74.</span> Garnalen met babi pangang saus</span><span class="menu-item-price">&euro; 22,90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">75.</span> Garnalen met paprika</span><span class="menu-item-price">&euro; 22,90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">76.</span> Koe Loe Ha</span><span class="menu-item-price">&euro; 22,90</span></div><div class="menu-item-desc">Gepaneerde garnalen in zoetzure saus</div></div>
+            </div>
+
+            <!-- ========== INDISCHE GERECHTEN ========== -->
+            <div class="menu-grid" data-category="indisch">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">77.</span> Nasi Rames Gewoon</span><span class="menu-item-price">&euro; 13,00</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">78.</span> Nasi Rames speciaal</span><span class="menu-item-price">&euro; 15,00</span></div><div class="menu-item-desc">1 stokje sat&eacute; ajam, 1/4 kip</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">79.</span> Bami Rames gewoon</span><span class="menu-item-price">&euro; 13,00</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">80.</span> Bami Rames speciaal</span><span class="menu-item-price">&euro; 15,00</span></div><div class="menu-item-desc">1 stokje sat&eacute; ajam, 1/4 kip</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">81.</span> Gado Gado met rijst (koud)</span><span class="menu-item-price">&euro; 11,50</span></div><div class="menu-item-tag">Vegetarisch</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">82.</span> Daging Smoor</span><span class="menu-item-price">&euro; 16,00</span></div><div class="menu-item-desc">Rundvlees in kerrysaus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">83.</span> Daging Roedjak</span><span class="menu-item-price">&euro; 16,00</span></div><div class="menu-item-desc">Rundvlees in tomatensaus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">85.</span> Ajam Pangang Bali</span><span class="menu-item-price">&euro; 14,50</span></div><div class="menu-item-desc">Pikante saus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">86.</span> Ajam Pangang Ketjap</span><span class="menu-item-price">&euro; 14,50</span></div><div class="menu-item-desc">Zoete saus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">87.</span> Ajam Pangang in babi pangang saus</span><span class="menu-item-price">&euro; 14,50</span></div></div>
+            </div>
+
+            <!-- ========== CANTONESE GARNALEN ========== -->
+            <div class="menu-grid" data-category="cant-garnalen">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">88.</span> Tong Koe Ha</span><span class="menu-item-price">&euro; 23,20</span></div><div class="menu-item-desc">Chinese garnalen met chinese champignons</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">89.</span> Sin Jir Ha</span><span class="menu-item-price">&euro; 23,20</span></div><div class="menu-item-desc">Chinese garnalen met knoflooksaus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">90.</span> Tau Si Ha</span><span class="menu-item-price">&euro; 23,20</span></div><div class="menu-item-desc">Chinese garnalen in zwarte bonensaus</div></div>
+            </div>
+
+            <!-- ========== PEKING EEND ========== -->
+            <div class="menu-grid" data-category="eend">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">94.</span> Peking Eend</span><span class="menu-item-price">&euro; 20,00</span></div><div class="menu-item-desc">Eend met groenten en stukjes tja siew (varkensvlees)</div><span class="menu-item-tag">Specialiteit</span></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">95.</span> Tong Koe Eend</span><span class="menu-item-price">&euro; 20,00</span></div><div class="menu-item-desc">Eend met chinese champignons in oestersaus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">96.</span> Po Law Eend</span><span class="menu-item-price">&euro; 19,50</span></div><div class="menu-item-desc">Eend met schijfjes ananas in zoetzure saus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">97.</span> Them Shuen Eend</span><span class="menu-item-price">&euro; 19,50</span></div><div class="menu-item-desc">Eend met stukjes groenten in zoetzure saus</div></div>
+            </div>
+
+            <!-- ========== CANTONESE VLEES ========== -->
+            <div class="menu-grid" data-category="cant-vlees">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">98.</span> Tja Sieuw</span><span class="menu-item-price">&euro; 17,00</span></div><div class="menu-item-desc">Speciaal op chinese wijze geroosterd varkensvlees met babi pangang saus</div><span class="menu-item-tag">Klassiek</span></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">99.</span> Tong Koe Ngauw</span><span class="menu-item-price">&euro; 18,90</span></div><div class="menu-item-desc">Ossenhaasfilet met chinese champignons</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">100.</span> Tau Si Kai</span><span class="menu-item-price">&euro; 17,30</span></div><div class="menu-item-desc">Kipfilet in zwarte bonensaus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">101.</span> Tau Si Ngauw</span><span class="menu-item-price">&euro; 18,90</span></div><div class="menu-item-desc">Ossenhaasfilet in zwarte bonensaus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">102.</span> King Thong Ngauw</span><span class="menu-item-price">&euro; 20,00</span></div><div class="menu-item-desc">Mini ossenhaasstukjes gebakken in boter</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">103.</span> Sin Jir Ngauw</span><span class="menu-item-price">&euro; 18,90</span></div><div class="menu-item-desc">Ossenhaasfilet met knoflook</div></div>
+            </div>
+
+            <!-- ========== CHINESE BAMIE ========== -->
+            <div class="menu-grid" data-category="ch-bami">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">104.</span> Chinese bami zonder vlees</span><span class="menu-item-price">&euro; 12,00</span></div><div class="menu-item-tag">Vegetarisch</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">105.</span> Chinese bami met kipfilet en groenten</span><span class="menu-item-price">&euro; 13,80</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">106.</span> Chinese bami met ossenhaasfilet en groenten</span><span class="menu-item-price">&euro; 16,80</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">107.</span> Chinese bami met chin. grote garnalen en groenten</span><span class="menu-item-price">&euro; 19,50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">108.</span> Chinese bami speciaal</span><span class="menu-item-price">&euro; 17,50</span></div><div class="menu-item-desc">Kip, garnalen en groenten</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">109.</span> Chinese bami klein</span><span class="menu-item-price">&euro; 8,00</span></div><div class="menu-item-desc">Met ham en vlees</div></div>
+            </div>
+
+            <!-- ========== SZECHUAN GERECHTEN ========== -->
+            <div class="menu-grid" data-category="szechuan">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">110.</span> Szechuan Tja Sieuw</span><span class="menu-item-price">&euro; 19,00</span></div><div class="menu-item-desc">Geroosterde varkensvlees in koenposaus met rode pepers en knoflook</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">112.</span> Koen Po Kai</span><span class="menu-item-price">&euro; 17,90</span></div><div class="menu-item-desc">Kipfilet met cashewnoten in gekruide pikante saus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">113.</span> Koen Po Ngauw</span><span class="menu-item-price">&euro; 18,90</span></div><div class="menu-item-desc">Ossenhaasfilet met cashewnoten in gekruide pikante saus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">114.</span> Koen Po Ha</span><span class="menu-item-price">&euro; 23,50</span></div><div class="menu-item-desc">Chinese grote garnalen met cashewnoten in gekruide pikante saus</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">116.</span> Szechuan Laik Kai</span><span class="menu-item-price">&euro; 17,90</span></div><div class="menu-item-desc">Kipfilet met rode pepers en knoflook</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">117.</span> Szechuan Laik Ngauw</span><span class="menu-item-price">&euro; 18,90</span></div><div class="menu-item-desc">Ossenhaasfilet met rode pepers en knoflook</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">118.</span> Szechuan Laik Ha</span><span class="menu-item-price">&euro; 23,50</span></div><div class="menu-item-desc">Chinese grote garnalen met rode pepers en knoflook</div></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><span class="menu-item-num">119.</span> Szechuan Laik Ab</span><span class="menu-item-price">&euro; 22,00</span></div><div class="menu-item-desc">Eend met rode pepers en knoflook</div></div>
+            </div>
+
+            <!-- ========== COMBINATIE ========== -->
+            <div class="menu-grid" data-category="combi">
+                <div class="menu-item" style="grid-column: 1 / -1;">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name"><span class="menu-item-num">120.</span> 2 gerechten naar keuze</span>
+                        <span class="menu-item-price">&euro; 16,90</span>
+                    </div>
+                    <div class="menu-item-desc">Kies uit: Babi Ketjap, Sat&eacute; (kip, 4 stokjes), Ajam Pangang, Kip Kerry, Kip Ketjap, Babi Pangang, Tjap Tjoy (kip), Foe Yong Hai (kip), Koe Loe Yuk, Gado Gado</div>
+                    <span class="menu-item-tag">Goedkoopst</span>
+                </div>
+            </div>
+
+            <!-- ========== RIJSTTAFELS ========== -->
+            <div class="menu-grid" data-category="rijsttafel">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name"><span class="menu-item-num">121.</span> Indische Rijsttafel 1 persoon</span>
+                        <span class="menu-item-price">&euro; 20,90</span>
+                    </div>
+                    <div class="menu-item-desc">Daging roedjak, daging smoor, sat&eacute; ajam (2 stokjes), pisang goreng (2 stuks), gado gado, 1/4 kip en kroepoek</div>
+                    <span class="menu-item-tag">Specialiteit</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name"><span class="menu-item-num">122.</span> Indische Rijsttafel 2 personen</span>
+                        <span class="menu-item-price">&euro; 40,50</span>
+                    </div>
+                    <div class="menu-item-desc">Daging roedjak, daging smoor, sat&eacute; ajam (4 stokjes), pisang goreng (4 stuks), gado gado, 1/4 kip en kroepoek</div>
+                    <span class="menu-item-tag">Populair</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name"><span class="menu-item-num">123.</span> Chinese Rijsttafel 2 personen</span>
+                        <span class="menu-item-price">&euro; 47,50</span>
+                    </div>
+                    <div class="menu-item-desc">Kippen-, tomaat- of haaienvinnensoep, Kroepoek, Babi Pangang, Foe Yong Hai kip, Tjap Tjoy kip, Koe Loe Yuk, 4 stokjes sat&eacute; ajam</div>
+                    <span class="menu-item-tag">Aanrader</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name"><span class="menu-item-num">124.</span> Cantonese Rijsttafel 2 personen</span>
+                        <span class="menu-item-price">&euro; 50,00</span>
+                    </div>
+                    <div class="menu-item-desc">Chinese hors d'Oeuvre, Pekingsoep, tja sieuw, gefrituurde garnalen en ossenhaasfilet met ananas</div>
+                    <span class="menu-item-tag">Premium</span>
+                </div>
+            </div>
+
+            <!-- Toeslagen -->
+            <div class="menu-cta">
+                <p><strong>Let op:</strong> In plaats van witte rijst ook te leveren met nasi of bami (&euro; 2,00 extra)<br>
+                Mihoen of Chinese bami: &euro; 4,00 extra | Saus apart: &euro; 0,50 extra</p>
+                <p style="margin-top: 12px;"><strong>Heeft u een allergie? Meld het ons!</strong></p>
+                <p style="margin-top: 18px;"><a href="tel:0355261358" class="btn btn-primary">Bel nu: 035 526 1358</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="logo.svg" alt="Peking" class="logo-img logo-img-footer">
+                <div>
+                    <strong>Peking Blaricum</strong>
+                    <p>Chinees Indisch Afhaalrestaurant · sinds 1983</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>Wetering 35-39 · 1261 ND Blaricum</p>
+                <p>Tel: <a href="tel:0355261358">035 526 1358</a></p>
+                <p>Dagelijks geopend 16:00 - 21:00 (dinsdag gesloten behalve feestdagen)</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; <span id="year"></span> Peking Blaricum · Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:0355261358" class="floating-call" aria-label="Bel Peking Blaricum">
+        <span class="floating-call-icon">&#128222;</span>
+        <span class="floating-call-text">Bel &amp; bestel</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+    /* Menu category filter */
+    (function() {
+        'use strict';
+        var cats = document.querySelectorAll('.menu-cat[data-cat]');
+        var grids = document.querySelectorAll('.menu-grid[data-category]');
+        if (!cats.length || !grids.length) return;
+
+        cats.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var cat = this.getAttribute('data-cat');
+                // Update active button
+                cats.forEach(function(b) { b.classList.remove('active'); });
+                this.classList.add('active');
+                // Show/hide grids
+                grids.forEach(function(grid) {
+                    if (cat === 'all' || grid.getAttribute('data-category') === cat) {
+                        grid.style.display = '';
+                    } else {
+                        grid.style.display = 'none';
+                    }
+                });
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
