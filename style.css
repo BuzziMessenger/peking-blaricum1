@@ -129,8 +129,8 @@ input, textarea { font-family: inherit; font-size: inherit; }
 .hours-row.today { background: rgba(212, 175, 55, 0.08); border-left: 4px solid var(--color-gold); padding-left: 32px; }
 .hours-day { font-size: 15px; font-weight: 500; }
 .hours-time { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: var(--color-ink-soft); letter-spacing: 0.03em; }
-.hours-note { padding: 30px 36px; background: rgba(200, 16, 46, 0.04); border-top: 1px solid var(--color-line); }
-.hours-note p { font-size: 14px; color: var(--color-ink-soft); margin-bottom: 6px; }
+.hours-note { padding: 30px 36px; background: rgba(200, 16, 46, 0.04); border-top: 1px solid var(--color-line); text-align: center; }
+.hours-note p { font-size: 14px; color: var(--color-ink-soft); margin-bottom: 6px; display: inline-block; }
 .hours-note strong { color: var(--color-red); }
 .hours-status { margin-top: 14px; padding: 10px 16px; background: #fff; border-radius: var(--radius); font-weight: 600; font-size: 14px; display: inline-block; border: 1px solid var(--color-line); }
 .hours-status.open { color: #2d7a3a; border-color: #2d7a3a; background: rgba(45, 122, 58, 0.08); }
